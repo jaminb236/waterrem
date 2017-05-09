@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.carothers.waterrem.reminder">
+
+
+    <Button
+        android:id="@+id/button4"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="113dp"
+        android:layout_height="63dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="settings"
+        android:text="@string/settings"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="113dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="home"
+        android:text="@string/home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="113dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="reminder"
+        android:text="@string/reminder"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+        app:layout_constraintLeft_toRightOf="@+id/button3"
+        app:layout_constraintRight_toLeftOf="@+id/button4" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.carothers.waterrem.MainActivity">
+
+    <Button
+        android:id="@+id/button4"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="113dp"
+        android:layout_height="63dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="settings"
+        android:text="@string/settings"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="113dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="@string/home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="113dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="reminder"
+        android:text="@string/reminder"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+        app:layout_constraintLeft_toRightOf="@+id/button3"
+        app:layout_constraintRight_toLeftOf="@+id/button4"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="135dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:clickable="false"
+        android:contentDescription="@string/progress"
+        android:text="@string/progress"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:text="test" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="373dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:text="I just drank a:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridview"
+        app:layout_constraintTop_toBottomOf="@+id/output"
+        tools:layout_editor_absoluteX="8dp"
+        tools:text="I just drank a:" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="295dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="52dp"
+        android:columnWidth="70dp"
+        android:gravity="center"
+        android:horizontalSpacing="6dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="spacingWidthUniform"
+        android:verticalSpacing="10dp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="@+id/output"
+        app:layout_constraintTop_toBottomOf="@+id/output" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:text="Or tell me how much:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/gridview"
+        app:layout_constraintTop_toBottomOf="@+id/gridview" />
+
+    <EditText
+        android:id="@+id/custom"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Oz"
+        android:inputType="textPersonName|number"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
+        app:layout_constraintLeft_toRightOf="@+id/textView3"
+        android:layout_marginLeft="2dp" />
+
+    <Button
+        android:id="@+id/update"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="11dp"
+        android:onClick="update"
+        android:text="Update!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom"
+        tools:layout_editor_absoluteX="107dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Android Toolbar</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Settings</string>
+    <string name="action_new">Settings</string>
+    <string name="logo_desc">App logo</string>
+
+    <string name="home">Home</string>
+    <string name="reminder">Reminder</string>
+    <string name="settings">Settings</string>
+    <string name="progress">Progress</string>
+
+
+
+// these are the strings that the values in  the array pull from, need to add sizes/ These might be useless once I add user input
+    //infact double naming everything in android studio seems useless
+    <string name="watersmall">Small water</string>
+    <string name="watermed">Med water</string>
+    <string name="waterlarge">Lrg water</string>
+    <string name="coffesmall">Small Coffe</string>
+    <string name="coffemed">Med Coffe</string>
+    <string name="coffelarge">Lrg Coffe</string>
+    <string name="juicesmall">Small Juice</string>
+    <string name="juicemed">Med Juice</string>
+    <string name="juicelarge">Lrg Juice</string>
+
+    <string name="dr_seuss">Dr. Seuss</string>
+    <string name="karen_katz">8</string>
+    <string name="nancy_tillman">Nancy Tillman</string>
+    <string name="eric_carle">Eric Carle</string>
+    <string name="sandra_boynton">Sandra Boynton</string>
+
+</resources>
